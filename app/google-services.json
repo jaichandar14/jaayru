@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416010228585",
+    "project_id": "jaichandar-14",
+    "storage_bucket": "jaichandar-14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416010228585:android:2f87f7761c5722609da3f8",
+        "android_client_info": {
+          "package_name": "com.example.jaayr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2iOeLmELrI8bpprHaCYv3euFFO8dALXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
