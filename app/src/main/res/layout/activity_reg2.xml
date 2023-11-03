@@ -4,19 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.LoginActivity">
+    tools:context=".registeration.RegActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/etEmailAddress"
+            android:id="@+id/etSEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -30,7 +34,7 @@
             android:textColorHint="#757575" />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etSPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -43,23 +47,39 @@
             android:minHeight="48dp"
             android:textColorHint="#757575" />
 
+        <EditText
+            android:id="@+id/etSConfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            tools:ignore="TextContrastCheck" />
+
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnSSigned"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/custom_button_corner_ok"
-            android:text="Login" />
+            android:text="SignUp"
+            android:textAllCaps="false" />
 
         <TextView
-            android:id="@+id/tvRedirectSignUp"
+            android:id="@+id/tvRedirectLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
-            android:text="Don't have an account signin"
+            android:text="Already have an account login"
             android:textColor="#18206F"
             android:textSize="16sp" />
-
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

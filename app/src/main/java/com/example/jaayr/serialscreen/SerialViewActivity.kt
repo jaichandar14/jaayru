@@ -27,10 +27,15 @@ class SerialViewActivity : BaseActivity<SerailViewViewModel>(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seriall_view)
+        val actionbar = supportActionBar
+        //set actionbar title
+        actionbar!!.title = "All Serials "
+        actionbar.setDisplayHomeAsUpEnabled(true)
         viewModel = ViewModelProvider(this)[SerailViewViewModel::class.java]
         adapterSerial = CustomSerialListAdapter()
         adapterSerial.setCallBackInterface(this)
          channelName = intent.getStringExtra("ChannelName").toString()
+        actionbar!!.title = channelName
         if (channelName == "Vijay TV") {
             dataBaseVijay()
         }else if (channelName == "Sun Tv"){
